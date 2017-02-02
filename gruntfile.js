@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         dest: "css/dist/style.min.css"
       },
     },
-    cssmin: {
+    /*cssmin: {
       options: {
         shorthandCompacting: false,
         roundingPrecision: -1
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
           'css/dist/style.min.css': ['css/dist/style.min.css']
         }
       }
-    },
+    },*/
     sass: {
       dist: {
         files: [{
@@ -44,16 +44,24 @@ module.exports = function(grunt) {
           ext: '.css'
         }]
       }
+    },
+    watch: {
+      sass: {
+        // We watch and compile sass files as normal but don't live reload here
+        files: ['css/dist/*.scss'],
+        tasks: ['sass'],
+      },
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-concat-css');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
+/*  grunt.loadNpmTasks('grunt-contrib-cssmin');*/
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-  grunt.registerTask('default', ['concat', 'uglify', 'concat_css', 'cssmin', 'sass']);
+  grunt.registerTask('default', ['concat', 'uglify', /*'concat_css', 'cssmin',*/ 'sass']);
 
 };
