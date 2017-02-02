@@ -1,0 +1,27 @@
+/* -----ШАБЛОНИЗАТОР----- */
+
+#template {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    max-width: 600px;
+    font-family: Arial;
+}
+
+.profileName {
+    font-size: 40px;    
+}
+
+#template img {
+    border: 1px solid gray;
+}
+
+.info {
+    margin: auto; 
+    margin-bottom: 100px;
+    text-align: left;
+}
+
+.contacts {
+    margin-left: 40px;
+}
