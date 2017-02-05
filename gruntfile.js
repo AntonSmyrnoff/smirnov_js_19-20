@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-    concat: {
+    /*concat: {
       options: {
         separator: ';'
       },
@@ -15,12 +15,12 @@ module.exports = function(grunt) {
         src: ['js/dist/script.min.js'],
         dest: 'js/dist/script.min.js'
       }
-    },
+    },*/
     concat_css: {
       options: {},
       all: {
         src: ["css/src/*.css"],
-        dest: "css/dist/style.min.css"
+        dest: "css/style.css"
       },
     },
     /*cssmin: {
@@ -38,9 +38,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'css/dist',
+          cwd: 'scss',
           src: ['*.scss'],
-          dest: 'css/dist',
+          dest: 'css/src',
           ext: '.css'
         }]
       }
@@ -48,20 +48,20 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         // We watch and compile sass files as normal but don't live reload here
-        files: ['css/dist/*.scss'],
-        tasks: ['sass'],
+        files: ['scss/*.scss'],
+        tasks: ['sass', 'concat_css'],
       },
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  /*grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-concat-css');
+  grunt.loadNpmTasks('grunt-concat-css');*/
 /*  grunt.loadNpmTasks('grunt-contrib-cssmin');*/
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-  grunt.registerTask('default', ['concat', 'uglify', /*'concat_css', 'cssmin',*/ 'sass']);
+  grunt.registerTask('default', [/*'concat', 'uglify', */ /*'cssmin',*/ 'watch']);
 
 };
