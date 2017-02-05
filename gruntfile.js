@@ -40,7 +40,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'scss',
           src: ['*.scss'],
-          dest: 'css/src',
+          dest: 'css',
           ext: '.css'
         }]
       }
@@ -49,14 +49,14 @@ module.exports = function(grunt) {
       sass: {
         // We watch and compile sass files as normal but don't live reload here
         files: ['scss/*.scss'],
-        tasks: ['sass', 'concat_css'],
+        tasks: ['sass'],
       },
     }
   });
 
-  /*grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-concat-css');*/
+/*  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');*/
+  grunt.loadNpmTasks('grunt-concat-css');
 /*  grunt.loadNpmTasks('grunt-contrib-cssmin');*/
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
