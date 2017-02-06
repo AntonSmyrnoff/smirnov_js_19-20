@@ -32,3 +32,10 @@
 	color: $textColorFooter;
 	opacity: 15%;
 }
+
+@mixin linerGradient ($pos, $rgbaB, $rgbaE) {
+	background: -moz-linear-gradient($pos, $rgbaB, $rgbaE);
+    background: -webkit-linear-gradient($pos, $rgbaB, $rgbaE);
+    background: -o-linear-gradient($pos, $rgbaB, $rgbaE);
+    background: -ms-linear-gradient($pos, $rgbaB, $rgbaE);
+}
