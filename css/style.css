@@ -67,15 +67,10 @@ table {
 .container {
   max-width: 1160px; }
 
-header {
-  background-color: #f09876;
-  margin: 20%; }
-
-div {
-  padding: 10px; }
-
 footer {
-  background-color: green;
-  font-size: 16px; }
+  font-family: "Arial Regular";
+  font-size: 12px;
+  color: #fff;
+  opacity: 20%; }
 
 /*# sourceMappingURL=style.css.map */
