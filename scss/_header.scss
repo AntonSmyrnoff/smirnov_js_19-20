@@ -84,7 +84,7 @@
 				border-right: 1px solid #181a1d;
 				a{
 					text-decoration: none;
-					color: $linkColor;
+					color: $navbarTextColor;
 					text-transform: uppercase;
 					font-family: $menuFont;
 					font-size: 14px;
@@ -95,15 +95,99 @@
 				&.active {
 					background-color: #248cec;
 					a:hover {
-						color: $linkColor;
+						color: $navbarTextColor;
 					}
 				}
 			}
 		}
 	}
+
 	.header__search {
 		float: right;
+		border: 1px solid #181a1d;
+		background-color: #35383c;
+		width: 240px;
+		height: 38px;
+		margin: 8px 8px 8px 0;
+    	padding: 8px;
+    	box-sizing: border-box;
+		input {
+			background-color: transparent;
+			color: $navbarTextColor;
+			font-size: $textFontSizeSmall;
+			border: none; 
+			outline: none;
+			opacity: 0.2;
+		}
+		i {
+			float: right;
+			color: $navbarTextColor;
+			opacity: 0.2;
+			margin: 2px 5px 0 0;
+			&:hover{
+				cursor: pointer;
+			}
+		}
 	}
 
 }
+
+.header__slider {
+	position: relative;
+	overflow: hidden;
+	margin-top: 40px;
+	height: $sliderHeight;
+	.slider-wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		z-index: -1;
+		img {
+			margin: -200px 0 0 -70px;
+			opacity: 1;
+		}
+	}
+}
+
+.header__sliderText {
+	float: left;
+	margin-top: 235px;
+    padding: 29px;
+    padding-top: 17px;
+    margin-left: 33px;
+    background: url(../img/bg-slider-text.png) no-repeat;
+	p {
+		font: {
+			family: $headerFont;
+			size: 54px;
+		};
+		color: #fff;
+		text-transform: uppercase;
+		&:first-child {
+			color: #f4b60d;
+		}
+	}
+}
+
+.header__sliderBlocks {
+	float: right;
+	width: 73%;
+    position: absolute;
+    right: -10px;
+    top: -3px;
+	div {
+		width: $sliderBlockSize;
+		height: $sliderBlockSize;
+	    float: right;
+	    display: inline-block;
+	    border-bottom: 1px solid rgba(131, 234, 242, 0.8);
+	    border-right: 1px solid rgba(131, 234, 242, 0.8);
+	}
+}
+
+
+
+
+
 

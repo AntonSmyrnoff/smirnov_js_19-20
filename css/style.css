@@ -155,6 +155,71 @@ body {
         .header__navbar nav ul li.active a:hover {
           color: #fff; }
   .header__navbar .header__search {
-    float: right; }
+    float: right;
+    border: 1px solid #181a1d;
+    background-color: #35383c;
+    width: 240px;
+    height: 38px;
+    margin: 8px 8px 8px 0;
+    padding: 8px;
+    box-sizing: border-box; }
+    .header__navbar .header__search input {
+      background-color: transparent;
+      color: #fff;
+      font-size: 12px;
+      border: none;
+      outline: none;
+      opacity: 0.2; }
+    .header__navbar .header__search i {
+      float: right;
+      color: #fff;
+      opacity: 0.2;
+      margin: 2px 5px 0 0; }
+      .header__navbar .header__search i:hover {
+        cursor: pointer; }
+
+.header__slider {
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+  height: 470px; }
+  .header__slider .slider-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1; }
+    .header__slider .slider-wrapper img {
+      margin: -200px 0 0 -70px;
+      opacity: 1; }
+
+.header__sliderText {
+  float: left;
+  margin-top: 235px;
+  padding: 29px;
+  padding-top: 17px;
+  margin-left: 33px;
+  background: url(../img/bg-slider-text.png) no-repeat; }
+  .header__sliderText p {
+    font-family: "Ubuntu Medium";
+    font-size: 54px;
+    color: #fff;
+    text-transform: uppercase; }
+    .header__sliderText p:first-child {
+      color: #f4b60d; }
+
+.header__sliderBlocks {
+  float: right;
+  width: 73%;
+  position: absolute;
+  right: -10px;
+  top: -3px; }
+  .header__sliderBlocks div {
+    width: 117.5px;
+    height: 117.5px;
+    float: right;
+    display: inline-block;
+    border-bottom: 1px solid rgba(131, 234, 242, 0.8);
+    border-right: 1px solid rgba(131, 234, 242, 0.8); }
 
 /*# sourceMappingURL=style.css.map */
