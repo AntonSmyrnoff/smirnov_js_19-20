@@ -242,12 +242,100 @@ body {
     .header__sliderText p:first-child {
       color: #f4b60d; }
 
+/* -----FEATURES----- */
+.features {
+  margin-top: 57px; }
+
 .features__item {
   width: 30%;
-  /* 	display: inline-block; */
   float: left;
-  margin-right: 5%; }
-  .features__item:last-child {
-    margin-right: 0; }
+  margin-left: 5%; }
+  .features__item:first-child {
+    margin-left: 0; }
+  .features__item > div {
+    display: inline-block; }
+  .features__item .features__number {
+    font-family: "Ubuntu Medium";
+    font-size: 90px;
+    color: #2a2b2e;
+    opacity: 0.1; }
+  .features__item .features__text {
+    float: right;
+    width: 64%;
+    margin-top: 15px; }
+    .features__item .features__text h3 {
+      font-family: "Ubuntu Medium";
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #2a2b2e; }
+    .features__item .features__text p {
+      font-size: 13px;
+      color: #8a8a8a;
+      line-height: 20px; }
+    .features__item .features__text > .fa {
+      color: #f4b60d;
+      margin-bottom: 15px; }
+    .features__item .features__text div {
+      margin-top: 15px; }
+    .features__item .features__text a {
+      font-family: "Ubuntu Medium";
+      font-size: 13px;
+      color: #2a2b2e;
+      text-decoration: none; }
+      .features__item .features__text a .fa {
+        margin-left: 5px;
+        color: #248cec; }
+      .features__item .features__text a:hover {
+        color: #248cec; }
+        .features__item .features__text a:hover .fa {
+          color: #2a2b2e; }
+
+/* -----SERVICES----- */
+.services {
+  margin-top: 60px;
+  background-color: #2a2d32; }
+  .services h2 {
+    font-family: "Ubuntu Medium";
+    font-size: 24px;
+    color: #fff;
+    margin: 20px 0; }
+
+.services__items {
+  float: left;
+  width: 22%;
+  margin-left: 4%; }
+  .services__items:first-child {
+    margin-left: 0; }
+  .services__items .services__wrapper {
+    position: relative;
+    overflow: hidden;
+    text-align: center; }
+    .services__items .services__wrapper a {
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      color: #222222;
+      opacity: 1;
+      filter: alpha(opacity=0);
+      z-index: 1; }
+      .services__items .services__wrapper a div {
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        width: 100%; }
+        .services__items .services__wrapper a div p {
+          font-size: 100px;
+          color: #fff; }
+    .services__items .services__wrapper img {
+      height: 255px;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease;
+      margin-left: -100px; }
 
 /*# sourceMappingURL=style.css.map */

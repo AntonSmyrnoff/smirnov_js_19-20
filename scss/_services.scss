@@ -1,0 +1,60 @@
+/* -----SERVICES----- */
+.services {
+	margin-top: 60px;
+	background-color: #2a2d32;
+	h2 {
+		font: {
+			family: $headerFont;
+			size: 24px;
+		};
+		color: #fff;
+		margin: 20px 0;
+	}
+}
+.serices__field {
+}
+.services__items {
+	float: left;
+	width: 22%;
+	margin-left: 4%;
+	&:first-child {
+		margin-left: 0;
+	};
+	.services__wrapper {
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		a {
+			background-color: rgba(0,0,0, .8);
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    bottom: 0;
+		    right: 0;
+		    color: #222222;
+		    opacity: 1;
+		    filter: alpha(opacity=0);
+		    z-index: 1;
+		    div {
+		    	margin: auto;
+			    position: absolute;
+			    top: 30%;
+			    width: 100%;
+			    p {
+			    	font-size: 100px;
+			    	color: #fff;
+			    }
+		    }
+		}
+		img {
+		    height: 255px;
+		    -webkit-transition: all .5s ease;
+		    -moz-transition: all .5s ease;
+		    -ms-transition: all .5s ease;
+		    -o-transition: all .5s ease;
+		    transition: all .5s ease;
+		    margin-left: -100px;
+		}
+	}
+	
+}
