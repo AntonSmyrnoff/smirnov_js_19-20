@@ -6,12 +6,11 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
 </head>
 <body>
 	<header class="header">
 		<div class="container">
-			
 			<div class="header__logo">
 				<div class="header__logoPicture">
 					<i class="fa fa-cog" aria-hidden="true"></i>
@@ -40,7 +39,6 @@
 						<li><a href="#">Shop</a></li>
 					</ul>
 				</nav>
-				
 				<div class="header__search">
 					<input type="text" name="search" placeholder="Search...">
 					<i class="fa fa-search" aria-hidden="true"></i>
@@ -50,50 +48,47 @@
 
 			<div class="header__slider">
 				<div class="slider-wrapper">
-					<img src="img/slider-1.jpg">
+					<div class="jcarousel">
+						<ul>
+							<li><img src="img/slider-1.jpg"></li>
+							<li><img src="img/slider-2.jpg"></li>
+							<li><img src="img/slider-3.jpg"></li>
+						</ul>
+					</div>
 				</div>
+				<div class="jcarousel-pagination"></div>
 				<div class="header__sliderText">
 					<p class="tagline">Build</p>
 					<p class="tagline">Your</p>
 					<p class="tagline">Business</p>
 				</div>
-				<div class="header__sliderBlocks">
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-					<div> </div>
-				</div>
 			</div>
-
 		</div>
 	</header>
 
 	<section class="features">
-		<div class="container"></div>
+		<div class="container">
+			<div class="features__item">
+				<div class="features__number"></div>
+				<div class="features__text">
+					<i class="fa fa-cog" aria-hidden="true"></i>
+				</div>
+			</div>
+
+			<div class="features__item">
+				<div class="features__number"></div>
+				<div class="features__text">
+					<i class="fa fa-cog" aria-hidden="true"></i>
+				</div>
+			</div>
+			
+			<div class="features__item">
+				<div class="features__number"></div>
+				<div class="features__text">
+					<i class="fa fa-truck" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
 		
 	</section>
 
@@ -118,5 +113,15 @@
 	<footer class="footer">
 		
 	</footer>
+
+
+
+
+
+
+
+
+
+	<script src="js/script.js"></script>
 </body>
 </html>

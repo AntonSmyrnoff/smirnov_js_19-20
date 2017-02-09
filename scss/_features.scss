@@ -1,0 +1,9 @@
+.features__item {
+	width: 30%;
+/* 	display: inline-block; */
+	float: left;
+	margin-right: 5%;
+	&:last-child {
+		margin-right: 0;
+	}
+}
