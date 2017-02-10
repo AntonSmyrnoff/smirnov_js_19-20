@@ -292,50 +292,69 @@ body {
 
 /* -----SERVICES----- */
 .services {
-  margin-top: 60px;
-  background-color: #2a2d32; }
+  margin-top: 90px;
+  background-color: #2a2d32;
+  padding-top: 7px; }
   .services h2 {
     font-family: "Ubuntu Medium";
     font-size: 24px;
     color: #fff;
-    margin: 20px 0; }
+    margin: 36px 0 55px 0; }
 
 .services__items {
   float: left;
-  width: 22%;
+  width: 255px;
   margin-left: 4%; }
   .services__items:first-child {
     margin-left: 0; }
-  .services__items .services__wrapper {
+  .services__items a {
+    display: block;
     position: relative;
-    overflow: hidden;
-    text-align: center; }
-    .services__items .services__wrapper a {
-      background-color: rgba(0, 0, 0, 0.8);
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      color: #222222;
-      opacity: 1;
-      filter: alpha(opacity=0);
-      z-index: 1; }
-      .services__items .services__wrapper a div {
-        margin: auto;
-        position: absolute;
-        top: 30%;
-        width: 100%; }
-        .services__items .services__wrapper a div p {
-          font-size: 100px;
-          color: #fff; }
-    .services__items .services__wrapper img {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-family: "Ubuntu Medium";
+    font-size: 16px; }
+    .services__items a .services__img {
       height: 255px;
-      -webkit-transition: all .5s ease;
-      -moz-transition: all .5s ease;
-      -ms-transition: all .5s ease;
-      -o-transition: all .5s ease;
-      transition: all .5s ease;
+      overflow: hidden; }
+    .services__items a .services__img--img1 img {
+      margin-left: -175px; }
+    .services__items a .services__img--img2 img {
       margin-left: -100px; }
+    .services__items a p {
+      margin-top: 35px;
+      margin-bottom: 70px;
+      -webkit-transition: color 0.3s ease-out;
+      -moz-transition: color 0.3s ease-out;
+      -o-transition: color 0.3s ease-out;
+      transition: color 0.3s ease-out; }
+    .services__items a .hover-bgc {
+      width: 255px;
+      height: 255px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #248cec;
+      opacity: 0;
+      visibility: hidden;
+      font-family: "Ubuntu Light";
+      font-size: 100px;
+      color: #fff;
+      padding-top: 25%;
+      box-sizing: border-box;
+      -webkit-transition: visibility 0.3s ease-out;
+      -moz-transition: visibility 0.3s ease-out;
+      -o-transition: visibility 0.3s ease-out;
+      transition: visibility 0.3s ease-out;
+      -webkit-transition: opacity 0.3s ease-out;
+      -moz-transition: opacity 0.3s ease-out;
+      -o-transition: opacity 0.3s ease-out;
+      transition: opacity 0.3s ease-out; }
+    .services__items a:hover .hover-bgc {
+      visibility: visible;
+      opacity: 0.9; }
+    .services__items a:hover p {
+      color: #f4b60d; }
 
 /*# sourceMappingURL=style.css.map */

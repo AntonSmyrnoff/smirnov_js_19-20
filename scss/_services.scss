@@ -1,60 +1,77 @@
 /* -----SERVICES----- */
 .services {
-	margin-top: 60px;
+	margin-top: 90px;
 	background-color: #2a2d32;
+	padding-top: 7px;
 	h2 {
 		font: {
 			family: $headerFont;
 			size: 24px;
 		};
 		color: #fff;
-		margin: 20px 0;
+		margin: 36px 0 55px 0;
 	}
 }
 .serices__field {
 }
 .services__items {
 	float: left;
-	width: 22%;
+	width: 255px;
 	margin-left: 4%;
 	&:first-child {
 		margin-left: 0;
 	};
-	.services__wrapper {
+	a {
+		display: block;
 		position: relative;
-		overflow: hidden;
+		text-decoration: none;
+		color: #fff;
 		text-align: center;
-		a {
-			background-color: rgba(0,0,0, .8);
-		    position: absolute;
-		    left: 0;
-		    top: 0;
-		    bottom: 0;
-		    right: 0;
-		    color: #222222;
-		    opacity: 1;
-		    filter: alpha(opacity=0);
-		    z-index: 1;
-		    div {
-		    	margin: auto;
-			    position: absolute;
-			    top: 30%;
-			    width: 100%;
-			    p {
-			    	font-size: 100px;
-			    	color: #fff;
-			    }
-		    }
+		font: {
+			family: $headerFont;
+			size: 16px;
 		}
-		img {
+		.services__img {
+			height: 255px;
+		    overflow: hidden;
+		}
+		.services__img--img1 img {
+		    	margin-left: -175px;
+		}
+		.services__img--img2 img {
+		    	margin-left: -100px;
+		}
+		p{
+			margin-top: 35px;
+   			margin-bottom: 70px;
+   			@include servicesHover(color, 0.3s, ease-out);
+		}
+		.hover-bgc {
+			width: 255px;
 		    height: 255px;
-		    -webkit-transition: all .5s ease;
-		    -moz-transition: all .5s ease;
-		    -ms-transition: all .5s ease;
-		    -o-transition: all .5s ease;
-		    transition: all .5s ease;
-		    margin-left: -100px;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    background-color: #248cec;
+		    opacity: 0;
+		    visibility: hidden;
+		    font-family: "Ubuntu Light";
+		    font-size: 100px;
+		    color: #fff;
+		    padding-top: 25%;
+		    box-sizing: border-box;
+		    @include servicesHover(visibility, 0.3s, ease-out);
+		    @include servicesHover(opacity, 0.3s, ease-out);
+		}
+		&:hover .hover-bgc{
+			visibility: visible;
+			opacity: 0.9;
+		}
+		&:hover p {
+			color: #f4b60d;
 		}
 	}
-	
+
 }
+	
+
