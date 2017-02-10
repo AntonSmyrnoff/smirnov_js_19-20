@@ -357,4 +357,39 @@ body {
     .services__items a:hover p {
       color: #f4b60d; }
 
+/*-----NEWS-----*/
+.news .container > div {
+  width: 48%; }
+.news h2 {
+  margin: 25px 0;
+  color: #2a2d32;
+  font-family: "Ubuntu Medium";
+  font-size: 24px; }
+
+.news__latestNews {
+  float: left; }
+  .news__latestNews article {
+    background-color: green;
+    height: 150px;
+    /* 		overflow: hidden;
+    		 */ }
+  .news__latestNews article > div {
+    display: inline-block; }
+  .news__latestNews .news__image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    float: left; }
+  .news__latestNews .news__content {
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 8%; }
+    .news__latestNews .news__content p.news__text {
+      overflow: hidden;
+      text-overflow: ellipsis; }
+
+.news__banners {
+  float: right; }
+
 /*# sourceMappingURL=style.css.map */

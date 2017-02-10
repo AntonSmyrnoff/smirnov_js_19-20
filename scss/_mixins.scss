@@ -46,3 +46,10 @@
     -o-transition: $prop $dur $timing;
 	transition: $prop $dur $timing;
 }
+
+@mixin fontHeaders () {
+	font: {
+			family: $headerFont;
+			size: 24px;
+		}
+}

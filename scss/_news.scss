@@ -1,0 +1,42 @@
+/*-----NEWS-----*/
+.news {
+	& .container>div {
+		width: 48%;
+	}
+	h2 {
+		margin: 25px 0;
+		color: #2a2d32;
+		@include fontHeaders();
+	}
+}
+.news__latestNews {
+	float: left;
+	article {
+		background-color: green;
+		height: 150px;
+/* 		overflow: hidden;
+		 */		
+	}
+	article>div {
+		display: inline-block;
+	}
+	.news__image {
+		width: 150px;
+		height: 150px;
+		overflow: hidden;
+		float: left;
+	}
+	.news__content {
+		width: 65%;
+		height: 100%;
+		overflow: hidden;
+		margin-left: 8%;
+		p.news__text {
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}
+.news__banners {
+	float: right;
+}

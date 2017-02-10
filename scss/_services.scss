@@ -4,10 +4,7 @@
 	background-color: #2a2d32;
 	padding-top: 7px;
 	h2 {
-		font: {
-			family: $headerFont;
-			size: 24px;
-		};
+		@include fontHeaders();
 		color: #fff;
 		margin: 36px 0 55px 0;
 	}
@@ -71,7 +68,6 @@
 			color: #f4b60d;
 		}
 	}
-
 }
 	
 
