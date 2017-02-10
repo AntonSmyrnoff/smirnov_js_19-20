@@ -1,3 +1,29 @@
+/* @mixin footerText {
+	font: {
+		family: $textFont;
+		size: $textFontSizeSmall;
+	};
+	color: $textColorFooter;
+	opacity: 20%;
+}
+
+@mixin footerLinks {
+	font: {
+		family: $textFont;
+		size: $textFontSizeMain;
+	};
+	color: $textColorFooter;
+	opacity: 30%;
+}
+
+@mixin inputField {
+	font: {
+		family: $textFont;
+		size: $textFontSizeSmall;
+	};
+	color: $textColorFooter;
+	opacity: 15%;
+} */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -358,21 +384,24 @@ body {
       color: #f4b60d; }
 
 /*-----NEWS-----*/
-.news .container > div {
-  width: 48%; }
-.news h2 {
-  margin: 25px 0;
-  color: #2a2d32;
-  font-family: "Ubuntu Medium";
-  font-size: 24px; }
+.news {
+  background-color: #f7f7f7;
+  padding-bottom: 50px; }
+  .news .container > div {
+    width: 48%; }
+  .news h2 {
+    margin: 25px 0;
+    color: #2a2d32;
+    font-family: "Ubuntu Medium";
+    font-size: 24px; }
 
 .news__latestNews {
   float: left; }
+  .news__latestNews .news__field {
+    margin-top: 45px; }
   .news__latestNews article {
-    background-color: green;
     height: 150px;
-    /* 		overflow: hidden;
-    		 */ }
+    margin-top: 25px; }
   .news__latestNews article > div {
     display: inline-block; }
   .news__latestNews .news__image {
@@ -385,11 +414,68 @@ body {
     height: 100%;
     overflow: hidden;
     margin-left: 8%; }
+    .news__latestNews .news__content a {
+      text-decoration: none; }
+    .news__latestNews .news__content h3 {
+      margin: 5px 0 10px 0; }
+      .news__latestNews .news__content h3 a {
+        font-family: "Ubuntu Medium";
+        font-size: 16px;
+        color: #2a2d32; }
+        .news__latestNews .news__content h3 a:hover {
+          color: #248cec; }
+    .news__latestNews .news__content .news__info {
+      display: inline-block;
+      margin-right: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 13px; }
+      .news__latestNews .news__content .news__info a {
+        color: #248cec; }
     .news__latestNews .news__content p.news__text {
-      overflow: hidden;
-      text-overflow: ellipsis; }
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 20px;
+      color: #8a8a8a;
+      margin-top: 20px; }
 
 .news__banners {
   float: right; }
+
+.banners__field {
+  margin-top: 45px; }
+
+.banners__panel {
+  margin-top: 5px;
+  cursor: pointer; }
+  .banners__panel .active {
+    background-color: #f4b60d;
+    border-color: #f6c53d; }
+
+.banners__sign, .banners__header {
+  width: 7%;
+  float: left;
+  font-size: 18px;
+  display: inline-block;
+  height: 37px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  padding: 8px 15px;
+  color: #2a2d32;
+  text-transform: uppercase;
+  line-height: 20px; }
+
+.banners__header {
+  width: 93%;
+  font-family: "Ubuntu Medium";
+  font-size: 13px; }
+
+.banners__text {
+  margin: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #8a8a8a;
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,10 +3,16 @@
 		family: $textFont;
 		size: $textFontSizeMain;
 	};
-	color: $textColor;
 }
 
-@mixin footerText {
+@mixin ubuntuText {
+	font: {
+		family: $headerFont;
+		size: $textFontSizeMain;
+	};
+}
+
+/* @mixin footerText {
 	font: {
 		family: $textFont;
 		size: $textFontSizeSmall;
@@ -31,7 +37,7 @@
 	};
 	color: $textColorFooter;
 	opacity: 15%;
-}
+} */
 
 @mixin linerGradient ($pos, $rgbaB, $rgbaE) {
 	background: -moz-linear-gradient($pos, $rgbaB, $rgbaE);

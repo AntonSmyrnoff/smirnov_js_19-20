@@ -35,3 +35,12 @@ $(function() {
                 }
             });
 });
+
+/*Выпадающий текст в Banners Place*/
+$(function() {
+    $('.banners__panel').click(function() {
+        $(this).find('.banners__wrapper div').toggleClass('active');
+        $(this).find('p').slideToggle(500);
+        $(this).find('.banners__sign').toggle();
+    })
+})
