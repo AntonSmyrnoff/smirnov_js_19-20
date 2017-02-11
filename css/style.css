@@ -478,4 +478,44 @@ body {
   color: #8a8a8a;
   display: none; }
 
+.partners img {
+  margin: 86px 46px 54px 0; }
+  .partners img:last-child {
+    margin-right: 0; }
+
+footer {
+  background-color: #2a2d32; }
+
+.footer__links {
+  padding: 60px 0 70px 0; }
+
+.footer__linksBlock {
+  width: 21.5%;
+  margin-left: 4%;
+  display: inline-block; }
+  .footer__linksBlock:first-child {
+    margin-left: 0; }
+  .footer__linksBlock h2 {
+    font-family: "Ubuntu Medium";
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase; }
+  .footer__linksBlock ul {
+    list-style: none;
+    margin-top: 36px; }
+    .footer__linksBlock ul li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      .footer__linksBlock ul li:last-child {
+        border: none; }
+      .footer__linksBlock ul li a {
+        text-decoration: none;
+        color: #fff;
+        opacity: 0.3;
+        line-height: 35px;
+        font-family: Arial, sans-serif;
+        font-size: 13px; }
+        .footer__linksBlock ul li a:hover {
+          color: #248cec;
+          opacity: 1; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+footer {
+	background-color: #2a2d32;
+}
+.footer__links {
+	padding: 60px 0 70px 0;
+}
+
+.footer__linksBlock {
+	width: 21.5%;
+	margin-left: 4%;
+	display: inline-block;
+	&:first-child {
+		margin-left: 0;
+	}
+	h2 {
+		font: {
+			family: $headerFont;
+			size: 16px;
+		}
+		color: #fff;
+		text-transform: uppercase;
+	}
+	ul {
+		list-style: none;
+		margin-top: 36px;
+		li {
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			&:last-child {
+				border: none;
+			}
+			a {
+				text-decoration: none;
+				color: #fff;
+				opacity: 0.3;
+				line-height: 35px;
+				@include commonText();
+				&:hover {
+					color: #248cec;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
