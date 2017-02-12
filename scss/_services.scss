@@ -17,7 +17,7 @@
 	margin-left: 4%;
 	&:first-child {
 		margin-left: 0;
-	};
+	}
 	a {
 		display: block;
 		position: relative;
@@ -27,16 +27,6 @@
 		font: {
 			family: $headerFont;
 			size: 16px;
-		}
-		.services__img {
-			height: 255px;
-		    overflow: hidden;
-		}
-		.services__img--img1 img {
-		    	margin-left: -175px;
-		}
-		.services__img--img2 img {
-		    	margin-left: -100px;
 		}
 		p{
 			margin-top: 35px;
@@ -68,6 +58,16 @@
 			color: #f4b60d;
 		}
 	}
+}
+.services__img {
+	height: 255px;
+    overflow: hidden;
+}
+.services__img--img1 img {
+    	margin-left: -175px;
+}
+.services__img--img2 img {
+    	margin-left: -100px;
 }
 	
 

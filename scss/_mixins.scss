@@ -10,34 +10,14 @@
 		family: $headerFont;
 		size: $textFontSizeMain;
 	};
-}
+};
 
-/* @mixin footerText {
+@mixin footerContacts {
 	font: {
 		family: $textFont;
 		size: $textFontSizeSmall;
-	};
-	color: $textColorFooter;
-	opacity: 20%;
-}
-
-@mixin footerLinks {
-	font: {
-		family: $textFont;
-		size: $textFontSizeMain;
-	};
-	color: $textColorFooter;
-	opacity: 30%;
-}
-
-@mixin inputField {
-	font: {
-		family: $textFont;
-		size: $textFontSizeSmall;
-	};
-	color: $textColorFooter;
-	opacity: 15%;
-} */
+	}	
+};
 
 @mixin linerGradient ($pos, $rgbaB, $rgbaE) {
 	background: -moz-linear-gradient($pos, $rgbaB, $rgbaE);

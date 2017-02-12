@@ -1,29 +1,3 @@
-/* @mixin footerText {
-	font: {
-		family: $textFont;
-		size: $textFontSizeSmall;
-	};
-	color: $textColorFooter;
-	opacity: 20%;
-}
-
-@mixin footerLinks {
-	font: {
-		family: $textFont;
-		size: $textFontSizeMain;
-	};
-	color: $textColorFooter;
-	opacity: 30%;
-}
-
-@mixin inputField {
-	font: {
-		family: $textFont;
-		size: $textFontSizeSmall;
-	};
-	color: $textColorFooter;
-	opacity: 15%;
-} */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -129,7 +103,7 @@ body {
   background: -o-linear-gradient(top, #e99400 0%, #ffca3f 100%);
   background: -ms-linear-gradient(top, #e99400 0%, #ffca3f 100%);
   background: linear-gradient(to bottom, #e99400 0%, #ffca3f 100%); }
-  .header__logoPicture .fa-cog {
+  .header__logoPicture .fa {
     font-size: 240%;
     margin-left: 60%;
     margin-top: 1px;
@@ -148,16 +122,21 @@ body {
     font-size: 18px; }
     .header__social .fa:hover {
       opacity: 1; }
-  .header__social .fa-facebook:hover {
-    color: #4867aa; }
-  .header__social .fa-twitter:hover {
-    color: #41abe1; }
-  .header__social .fa-rss:hover {
-    color: #fb7629; }
-  .header__social .fa-linkedin:hover {
-    color: #0077b5; }
-  .header__social .fa-skype:hover {
-    color: #00aff0; }
+
+.fa-facebook:hover {
+  color: #4867aa; }
+
+.fa-twitter:hover {
+  color: #41abe1; }
+
+.fa-rss:hover {
+  color: #fb7629; }
+
+.fa-linkedin:hover {
+  color: #0077b5; }
+
+.fa-skype:hover {
+  color: #00aff0; }
 
 .header__navbar {
   background-color: #2a2d32;
@@ -180,78 +159,81 @@ body {
         background-color: #248cec; }
         .header__navbar nav ul li.active a:hover {
           color: #fff; }
-  .header__navbar .header__search {
+
+.header__search {
+  float: right;
+  border: 1px solid #181a1d;
+  background-color: #35383c;
+  width: 240px;
+  height: 38px;
+  margin: 8px 8px 8px 0;
+  padding: 8px;
+  box-sizing: border-box; }
+  .header__search input {
+    background-color: transparent;
+    color: #fff;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    opacity: 0.3; }
+    .header__search input:focus {
+      opacity: 1; }
+  .header__search .fa {
     float: right;
-    border: 1px solid #181a1d;
-    background-color: #35383c;
-    width: 240px;
-    height: 38px;
-    margin: 8px 8px 8px 0;
-    padding: 8px;
-    box-sizing: border-box; }
-    .header__navbar .header__search input {
-      background-color: transparent;
-      color: #fff;
-      font-size: 12px;
-      border: none;
-      outline: none;
-      opacity: 0.3; }
-      .header__navbar .header__search input:focus {
-        opacity: 1; }
-    .header__navbar .header__search i {
-      float: right;
-      color: #fff;
-      opacity: 0.3;
-      margin: 2px 5px 0 0; }
-      .header__navbar .header__search i:hover {
-        cursor: pointer; }
+    color: #fff;
+    opacity: 0.3;
+    margin: 2px 5px 0 0; }
+    .header__search .fa:hover {
+      cursor: pointer; }
 
 .header__slider {
   position: relative;
   overflow: hidden;
   margin-top: 40px;
   height: 470px; }
-  .header__slider .slider-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -1;
-    width: 100%; }
-    .header__slider .slider-wrapper .jcarousel {
-      position: relative;
-      overflow: hidden; }
-    .header__slider .slider-wrapper .jcarousel ul {
-      width: 20000em;
-      position: relative;
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-    .header__slider .slider-wrapper .jcarousel li {
-      float: left; }
-      .header__slider .slider-wrapper .jcarousel li img {
-        margin: -200px 0 0 -70px; }
+
+.slider-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  width: 100%; }
+
+.jcarousel {
+  position: relative;
+  overflow: hidden; }
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.jcarousel li {
+  float: left; }
+  .jcarousel li img {
+    margin: -200px 0 0 -70px; }
 
 .jcarousel-pagination {
   position: absolute;
   bottom: 15px;
   left: 50%;
   margin: 0; }
-
-.jcarousel-pagination a {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 11px;
-  height: 15px;
-  width: 15px;
-  line-height: 15px;
-  background: #fff;
-  text-indent: -9999px;
-  margin-right: 15px; }
-
-.jcarousel-pagination a.active {
-  background: #000;
-  color: #fff; }
+  .jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    background: #fff;
+    text-indent: -9999px;
+    margin-right: 15px; }
+    .jcarousel-pagination a.active {
+      background: #000;
+      color: #fff; }
 
 .header__sliderText {
   float: left;
@@ -280,41 +262,43 @@ body {
     margin-left: 0; }
   .features__item > div {
     display: inline-block; }
-  .features__item .features__number {
+
+.features__number {
+  font-family: "Ubuntu Medium";
+  font-size: 90px;
+  color: #2a2b2e;
+  opacity: 0.1; }
+
+.features__text {
+  float: right;
+  width: 64%;
+  margin-top: 15px; }
+  .features__text h3 {
     font-family: "Ubuntu Medium";
-    font-size: 90px;
-    color: #2a2b2e;
-    opacity: 0.1; }
-  .features__item .features__text {
-    float: right;
-    width: 64%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2a2b2e; }
+  .features__text p {
+    font-size: 13px;
+    color: #8a8a8a;
+    line-height: 20px; }
+  .features__text > .fa {
+    color: #f4b60d;
+    margin-bottom: 15px; }
+  .features__text div {
     margin-top: 15px; }
-    .features__item .features__text h3 {
-      font-family: "Ubuntu Medium";
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #2a2b2e; }
-    .features__item .features__text p {
-      font-size: 13px;
-      color: #8a8a8a;
-      line-height: 20px; }
-    .features__item .features__text > .fa {
-      color: #f4b60d;
-      margin-bottom: 15px; }
-    .features__item .features__text div {
-      margin-top: 15px; }
-    .features__item .features__text a {
-      font-family: "Ubuntu Medium";
-      font-size: 13px;
-      color: #2a2b2e;
-      text-decoration: none; }
-      .features__item .features__text a .fa {
-        margin-left: 5px;
-        color: #248cec; }
-      .features__item .features__text a:hover {
-        color: #248cec; }
-        .features__item .features__text a:hover .fa {
-          color: #2a2b2e; }
+  .features__text a {
+    font-family: "Ubuntu Medium";
+    font-size: 13px;
+    color: #2a2b2e;
+    text-decoration: none; }
+    .features__text a .fa {
+      margin-left: 5px;
+      color: #248cec; }
+    .features__text a:hover {
+      color: #248cec; }
+      .features__text a:hover .fa {
+        color: #2a2b2e; }
 
 /* -----SERVICES----- */
 .services {
@@ -341,13 +325,6 @@ body {
     text-align: center;
     font-family: "Ubuntu Medium";
     font-size: 16px; }
-    .services__items a .services__img {
-      height: 255px;
-      overflow: hidden; }
-    .services__items a .services__img--img1 img {
-      margin-left: -175px; }
-    .services__items a .services__img--img2 img {
-      margin-left: -100px; }
     .services__items a p {
       margin-top: 35px;
       margin-bottom: 70px;
@@ -383,6 +360,16 @@ body {
     .services__items a:hover p {
       color: #f4b60d; }
 
+.services__img {
+  height: 255px;
+  overflow: hidden; }
+
+.services__img--img1 img {
+  margin-left: -175px; }
+
+.services__img--img2 img {
+  margin-left: -100px; }
+
 /*-----NEWS-----*/
 .news {
   background-color: #f7f7f7;
@@ -397,46 +384,50 @@ body {
 
 .news__latestNews {
   float: left; }
-  .news__latestNews .news__field {
-    margin-top: 45px; }
   .news__latestNews article {
     height: 150px;
     margin-top: 25px; }
   .news__latestNews article > div {
     display: inline-block; }
-  .news__latestNews .news__image {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    float: left; }
-  .news__latestNews .news__content {
-    width: 65%;
-    height: 100%;
-    overflow: hidden;
-    margin-left: 8%; }
-    .news__latestNews .news__content a {
-      text-decoration: none; }
-    .news__latestNews .news__content h3 {
-      margin: 5px 0 10px 0; }
-      .news__latestNews .news__content h3 a {
-        font-family: "Ubuntu Medium";
-        font-size: 16px;
-        color: #2a2d32; }
-        .news__latestNews .news__content h3 a:hover {
-          color: #248cec; }
-    .news__latestNews .news__content .news__info {
-      display: inline-block;
-      margin-right: 10px;
-      font-family: Arial, sans-serif;
-      font-size: 13px; }
-      .news__latestNews .news__content .news__info a {
+
+.news__field {
+  margin-top: 45px; }
+
+.news__image {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  float: left; }
+
+.news__content {
+  width: 65%;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 8%; }
+  .news__content a {
+    text-decoration: none; }
+  .news__content h3 {
+    margin: 5px 0 10px 0; }
+    .news__content h3 a {
+      font-family: "Ubuntu Medium";
+      font-size: 16px;
+      color: #2a2d32; }
+      .news__content h3 a:hover {
         color: #248cec; }
-    .news__latestNews .news__content p.news__text {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      line-height: 20px;
-      color: #8a8a8a;
-      margin-top: 20px; }
+  .news__content p.news__text {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #8a8a8a;
+    margin-top: 20px; }
+
+.news__info {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 13px; }
+  .news__info a {
+    color: #248cec; }
 
 .news__banners {
   float: right; }
@@ -483,11 +474,13 @@ body {
   .partners img:last-child {
     margin-right: 0; }
 
+/* -----FOOTER----- */
 footer {
   background-color: #2a2d32; }
 
 .footer__links {
-  padding: 60px 0 70px 0; }
+  padding: 25px 0 35px 0;
+  margin-top: 36px; }
 
 .footer__linksBlock {
   width: 21.5%;
@@ -517,5 +510,23 @@ footer {
         .footer__linksBlock ul li a:hover {
           color: #248cec;
           opacity: 1; }
+
+.footer__contacts {
+  background-color: rgba(53, 56, 60, 0.95); }
+  .footer__contacts p {
+    display: inline-block;
+    margin-right: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.2;
+    padding: 24px 0; }
+    .footer__contacts p:last-child {
+      margin-right: 0;
+      float: right;
+      margin-top: 6px; }
+  .footer__contacts .fa {
+    font-size: 18px;
+    margin-right: 14px; }
 
 /*# sourceMappingURL=style.css.map */

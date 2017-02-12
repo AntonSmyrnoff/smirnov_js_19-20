@@ -1,8 +1,10 @@
+/* -----FOOTER----- */
 footer {
 	background-color: #2a2d32;
 }
 .footer__links {
-	padding: 60px 0 70px 0;
+	padding: 25px 0 35px 0;
+	margin-top: 36px;	
 }
 
 .footer__linksBlock {
@@ -40,5 +42,26 @@ footer {
 				}
 			}
 		}
+	}
+}
+
+.footer__contacts {
+	background-color: rgba(53, 56, 60, 0.95);
+	p {
+		display: inline-block;
+		margin-right: 25px;
+		@include footerContacts();
+		color: #fff;
+		opacity: 0.2;
+		padding: 24px 0;
+		&:last-child {
+			margin-right: 0;
+			float: right;
+			margin-top: 6px;
+		}
+	}
+	.fa {
+		font-size: 18px;
+		margin-right: 14px;
 	}
 }
