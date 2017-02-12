@@ -43,4 +43,7 @@ $(function() {
         $(this).find('p').slideToggle(500);
         $(this).find('.banners__sign').toggle();
     })
-})
+});
+
+
+
